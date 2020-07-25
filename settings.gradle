@@ -1,0 +1,5 @@
+rootProject.name='JetPackLearnBase'
+include ':app'
+include ':livedata'
+include ':databinding'
+include ':PracticeScoreBoard'
