@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/PracticeScoreBoard" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/databinding" />
+            <option value="$PROJECT_DIR$/lifecycles" />
             <option value="$PROJECT_DIR$/livedata" />
             <option value="$PROJECT_DIR$/viewmodelrestore" />
           </set>
