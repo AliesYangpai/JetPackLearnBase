@@ -1,5 +1,6 @@
 package org.phoneservice.roombase.java;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -23,11 +24,12 @@ public interface PersonDao {
 
     @Update
     int updatePerson(Person... p);
+
     @Query(value = "delete from person")
     int deleteAllPerson();
 
     @Query(value = "select * from person order by id desc")
-    List<Person> getAllPerson();
-
+//    List<Person> getAllPerson();
+    LiveData<List<Person>> getAllPerson();
 
 }

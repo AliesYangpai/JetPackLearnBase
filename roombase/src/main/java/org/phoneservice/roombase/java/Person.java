@@ -18,10 +18,10 @@ public class Person {
     @ColumnInfo(name = "person_age")
     private int age;
 
-    public Person() {
+    Person() {
     }
 
-    public Person(String name, int age) {
+    Person(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -30,7 +30,7 @@ public class Person {
         return name;
     }
 
-    public void setName(String name) {
+    void setName(String name) {
         this.name = name;
     }
 
@@ -38,7 +38,7 @@ public class Person {
         return age;
     }
 
-    public void setAge(int age) {
+    void setAge(int age) {
         this.age = age;
     }
 
@@ -46,7 +46,7 @@ public class Person {
         return id;
     }
 
-    public void setId(int id) {
+    void setId(int id) {
         this.id = id;
     }
 }
