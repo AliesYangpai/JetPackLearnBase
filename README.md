@@ -6,4 +6,4 @@ databinding：Databinding练习
 lifecycles：Lifecycle练习
 livedata：LiveData练习
 roombase：room练习
-PracticeScoreBoard：记分牌功能测试练习：（DataBinding+ViewModel+LiveData）
+PracticeScoreBoard：记分牌功能测试练习：（DataBinding+ViewModel+LiveData）  
