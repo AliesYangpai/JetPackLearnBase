@@ -17,13 +17,31 @@ public class Person {
     private String name;
     @ColumnInfo(name = "person_age")
     private int age;
-
+    @ColumnInfo(name = "person_hobby")
+    private String hobby;
+    @ColumnInfo(name = "person_isVip")
+    private boolean isVip;
     Person() {
     }
+
 
     Person(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    Person(String name, int age, String hobby) {
+        this.name = name;
+        this.age = age;
+        this.hobby = hobby;
+    }
+
+    public boolean isVip() {
+        return isVip;
+    }
+
+    public void setVip(boolean vip) {
+        isVip = vip;
     }
 
     public String getName() {
@@ -49,4 +67,13 @@ public class Person {
     void setId(int id) {
         this.id = id;
     }
+
+    public String getHobby() {
+        return hobby;
+    }
+
+    public void setHobby(String hobby) {
+        this.hobby = hobby;
+    }
 }
+

@@ -68,6 +68,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
                     stringBuilder.append("id").append(person.getId())
                             .append("name:").append(person.getName())
                             .append("age:").append(person.getAge())
+                            .append("hobby:").append(person.getHobby())
                             .append(";").append("\n");
                 }
                 tv.setText(stringBuilder);

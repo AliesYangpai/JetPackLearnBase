@@ -12,43 +12,43 @@ import java.util.List;
  * 类描述  使用一个仓来进行数据的获取
  * 版本
  */
-public class PersonRepository {
+class PersonRepository {
 
     private LiveData<List<Person>> listLiveData;
     private PersonDataBase dbInstance;
     private PersonDao personDao;
 
-    public PersonRepository(Context context) {
+    PersonRepository(Context context) {
         dbInstance = PersonDataBase.getDbInstance(context);
         personDao = dbInstance.getPersonDao();
     }
 
-    public LiveData<List<Person>> getAllLiveData() {
+    LiveData<List<Person>> getAllLiveData() {
         listLiveData = personDao.getAllPerson();
         return listLiveData;
     }
 
-    public void updatePersonData() {
-        Person person = new Person("wangwu", 40);
+    void updatePersonData() {
+        Person person = new Person("wangwu", 40,"写代码");
         person.setId(17);
         personDao.updatePerson(person);
     }
 
-    public void addPersonData() {
-        Person person1 = new Person("张三", 10);
-        Person person2 = new Person("李四", 20);
-        Person person3 = new Person("王五", 30);
+    void addPersonData() {
+        Person person1 = new Person("张三", 10,"看书");
+        Person person2 = new Person("李四", 20,"听音乐");
+        Person person3 = new Person("王五", 30,"做家务");
         personDao.insertPerson(person1, person2, person3);
     }
 
-    public void deletePersonData() {
+    void deletePersonData() {
         Person person = new Person();
         person.setId(17);
         personDao.deletePerson(person);
     }
 
 
-    public void deleteAllPersonData() {
+    void deleteAllPersonData() {
         int i = personDao.deleteAllPerson();
         Log.i("Main2Activity", "删除的行数：i:" + i);
     }
