@@ -3,6 +3,7 @@ package org.phoneservice.roombase;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +20,7 @@ import java.util.List;
  * 1.增删改查
  * 进阶使用：
  * 1.加入ViewModel+LiveData+Repository 与异步(这里异步还我没有实现 ╮(╯▽╰)╭)
- *  到目前为止，我感觉目前还是有点像mvp ，0.0
+ * 到目前为止，我感觉目前还是有点像mvp ，0.0
  */
 public class Main2Activity extends AppCompatActivity implements View.OnClickListener {
 
@@ -59,7 +60,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
     private void initData() {
 
 
-        personViewModel = new PersonViewModel(this.getApplication());
+        personViewModel = new ViewModelProvider(this).get(PersonViewModel.class);
         personViewModel.getAllData().observe(this, new Observer<List<Person>>() {
             @Override
             public void onChanged(List<Person> allPerson) {
