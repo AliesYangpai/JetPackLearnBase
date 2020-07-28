@@ -24,6 +24,7 @@ public class PersonViewModel extends AndroidViewModel {
 
     public PersonViewModel(@NonNull Application application) {
         super(application);
+        personRepository = new PersonRepository(application);
     }
 
 
