@@ -1,5 +1,6 @@
 package org.phoneservice.mvpjetpack.presenter
 
+import org.phoneservice.mvpjetpack.BasePresenter
 import org.phoneservice.mvpjetpack.bean.Goods
 import org.phoneservice.mvpjetpack.iview.IGoodView
 import org.phoneservice.mvpjetpack.model.IGoodModel
