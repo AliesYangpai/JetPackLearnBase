@@ -7,4 +7,5 @@ lifecycles：Lifecycle练习
 livedata：LiveData练习  
 roombase：Room练习  
           ViewModel(repository (LiveData+Room))  
-PracticeScoreBoard：记分牌功能测试练习：（DataBinding+ViewModel+LiveData）
+PracticeScoreBoard：记分牌功能测试练习：（DataBinding+ViewModel+LiveData）  
+mvpjetpack：jetpack在MVP中的应用
