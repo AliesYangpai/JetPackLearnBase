@@ -16,6 +16,18 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
+<!--    <fragment-->
+<!--        android:id="@+id/fcv"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--        app:defaultNavHost ="true"-->
+<!--        app:navGraph ="@navigation/nav_main_host"-->
+<!--        app:layout_constraintStart_toStartOf="@id/tlb"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/tlb"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tlb"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/bnv"-->
+<!--        />-->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fcv"
         android:layout_width="0dp"
