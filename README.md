@@ -9,6 +9,7 @@ roombase：Room练习
           ViewModel(repository (LiveData+Room))  
 PracticeScoreBoard：记分牌功能测试练习：（DataBinding+ViewModel+LiveData）  
 mvpjetpack：jetpack在MVP中的应用  
-           1.加入liftCycle在此强化此MVP（处理生命周期问题）            
+           1.加入liftCycle在此强化此MVP（处理生命周期问题）  
+navigation:加入navagation的初级使用
 
             
