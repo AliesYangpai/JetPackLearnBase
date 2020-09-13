@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main_host"
+    app:startDestination="@id/productFragment">
+
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.alie.navigation.fragment.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" />
+    <fragment
+        android:id="@+id/msgFragment"
+        android:name="com.alie.navigation.fragment.MsgFragment"
+        android:label="fragment_msg"
+        tools:layout="@layout/fragment_msg" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.alie.navigation.fragment.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/mineFragment"
+        android:name="com.alie.navigation.fragment.MineFragment"
+        android:label="fragment_mine"
+        tools:layout="@layout/fragment_mine" />
+</navigation>

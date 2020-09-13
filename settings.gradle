@@ -1,3 +1,4 @@
+include ':navigation'
 rootProject.name='JetPackLearnBase'
 include ':app'
 include ':livedata'
