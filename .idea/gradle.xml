@@ -4,7 +4,7 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="testRunner" value="PLATFORM" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
@@ -13,7 +13,7 @@
             <option value="$PROJECT_DIR$/PracticeScoreBoard" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/databinding" />
-            <option value="$PROJECT_DIR$/lifecycles" />
+            <option value="$PROJECT_DIR$/lifecycle" />
             <option value="$PROJECT_DIR$/livedata" />
             <option value="$PROJECT_DIR$/mvpjetpack" />
             <option value="$PROJECT_DIR$/navigation" />
